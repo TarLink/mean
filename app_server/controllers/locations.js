@@ -28,7 +28,8 @@ module.exports.homelist = (req, res) => {
             distance: '250m'
         }]
     })
-}
+  }
+
 
 /* GET 'Location info' page */
 module.exports.locationInfo = (req, res) => {
@@ -79,12 +80,9 @@ module.exports.locationInfo = (req, res) => {
     })
 }
 
-/* GET 'Add review' page */
 module.exports.addReview = (req, res) => {
-    res.render('location-review-form', {
-        title: 'Review Starcups on Loc8r',
-        pageHeader: {
-            title: 'Review Starcups'
-        }
-    });
-};
+  res.render('location-review-form', {
+    title: 'Review Starcups on Loc8r',
+    pageHeader: { title: 'Review Starcups'}
+  })
+}
