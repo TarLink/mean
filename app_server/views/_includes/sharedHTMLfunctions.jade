@@ -1,0 +1,5 @@
+mixin outputRating(rating)
+  - for (let i = 1; i <= rating; i++)
+    span.fa.fa-star
+  - for (let i = rating; i < 5; i++ )
+    span.far.fa-star
