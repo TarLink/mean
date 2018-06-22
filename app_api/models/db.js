@@ -1,9 +1,9 @@
 'use strict'
 
-const dbconfig=require('../../config/herokudb.js')
 const mongoose = require('mongoose')
 let dbURI = 'mongodb://mongo:mongo@mongo/Loc8r'
 if(process.env.NODE_ENV === 'production') {
+  const dbconfig=require('../../config/herokudb.js')
   dbURI = dbconfig.url
 }
 mongoose.connect(dbURI)
